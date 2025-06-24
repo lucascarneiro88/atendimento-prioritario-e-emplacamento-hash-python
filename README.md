@@ -20,7 +20,9 @@ Este repositório contém dois projetos em Python desenvolvidos para uma tarefa 
 - O Nodo representa um cartão numerado contendo: número, cor e um ponteiro para o próximo paciente.
 - A lista é não circular ( o último elemento aponta para None).
 
-# Cartão / Paciente
+### Cartão / Paciente / Nodo
+
+```python
 class Patient:
     def __init__(self, number, color):
         self.number = number
@@ -33,7 +35,9 @@ class PatientList:
         self.head = None
         self.number_card_green = 1
         self.number_card_yellow = 201
+  ```
+
 
 - Aqui temos a definição do *Nodo* com três atributos obrigatórios e o inicio da *ListaEncadeada* com o ponteiro para a cabeça(head).
 
-- *Nodo(nó):* Representa um elemento (Paciente) da lista, em estrutura de dados um *nodo* é uma célula de uma estrutura encadeada que guarda um valor e também uma referência para outro(próximo)nodo.
+- **Nodo(nó):** Representa um elemento (Paciente) da lista, em estrutura de dados um *nodo* é uma célula de uma estrutura encadeada que guarda um valor e também uma referência para outro(próximo)nodo.
