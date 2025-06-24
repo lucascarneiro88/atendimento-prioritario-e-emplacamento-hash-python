@@ -14,3 +14,21 @@ class PatientList:
         self.head = None
         self.number_card_green = 1
         self.number_card_yellow = 201
+
+
+# Exigência de código 2 de 7
+# Implementar método para adicionar pacientes sem prioridade à lista
+# inserir no final da lista
+
+    def insertWithoutPriority(self, patient):
+        if not self.head:
+            self.head = patient
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = patient
+
+    
+
+   
