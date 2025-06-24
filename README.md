@@ -45,7 +45,7 @@ class PatientList:
 
 
 ### Exigência de código 2 de 7
-- Implementar método para adicionar pacientes sem prioridade à lista.
+- Implementar função para adicionar pacientes sem prioridade à lista.
 - O paciente deve ser inserido no **final da lista**.
 
 ### Função `insertWithoutPriority`
@@ -58,5 +58,25 @@ def insertWithoutPriority(self, patient):
         current = self.head
         while current.next:
             current = current.next
+        current.next = patient
+```
+
+
+### Exigência de código 3 de 7
+- Implementar função para adicionar pacientes com prioridade à lista.
+- O paciente com prioridade (cartão amarelo - "A") deve ser inserido **após todos os pacientes com prioridade já existentes**, mas sempre **antes dos pacientes sem prioridade** (cartão verde - "V").
+
+### Função `insertWithPriority`
+
+```python
+def insertWithPriority(self, patient):
+    if not self.head or self.head.color == 'V':
+        patient.next = self.head
+        self.head = patient
+    else:
+        current = self.head
+        while current.next and current.next.color == 'A':
+            current = current.next
+        patient.next = current.next
         current.next = patient
 ```
