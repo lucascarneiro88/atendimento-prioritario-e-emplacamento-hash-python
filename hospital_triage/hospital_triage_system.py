@@ -1,7 +1,7 @@
 # Exigencia de código 1 de 7
 # Implementar lista encadeada simples para pacientes
 
-# Cartão / Paciente
+# Cartão / Paciente / Nodo
 class Patient:
     def __init__(self, number, color):
         self.number = number
@@ -11,6 +11,6 @@ class Patient:
 # Lista encadeada simples para pacientes
 class PatientList:
     def __init__(self):
-        self.head = Node
+        self.head = None
         self.number_card_green = 1
         self.number_card_yellow = 201
