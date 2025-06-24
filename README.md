@@ -41,3 +41,22 @@ class PatientList:
 - Aqui temos a definição do *Nodo* com três atributos obrigatórios e o inicio da *ListaEncadeada* com o ponteiro para a cabeça(head).
 
 - **Nodo(nó):** Representa um elemento (Paciente) da lista, em estrutura de dados um *nodo* é uma célula de uma estrutura encadeada que guarda um valor e também uma referência para outro(próximo)nodo.
+
+
+
+### Exigência de código 2 de 7
+- Implementar método para adicionar pacientes sem prioridade à lista.
+- O paciente deve ser inserido no **final da lista**.
+
+### Função `insertWithoutPriority`
+
+```python
+def insertWithoutPriority(self, patient):
+    if not self.head:
+        self.head = patient
+    else:
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = patient
+```
