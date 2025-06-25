@@ -20,7 +20,7 @@ class PatientList:
 # Implementar função para add pacientes sem prioridade à lista
 # inserir no final da lista
 
-    def insertWithoutPriority(self, patient):
+    def insert_without_priority(self, patient):
         if not self.head:
             self.head = patient
         else:
@@ -33,7 +33,7 @@ class PatientList:
 # Implementar função para add pacientes com prioridade a lista
 # inserir após todos os nodos(pacientes) com prioridade( cartão amarelo - A ) mas sempre antes dos pacientes sem prioridade (cartão verde - V)
 
-def insertWithPriority(self, patient):
+def insert_with_priority(self, patient):
     if not self.head or self.head.color == 'V':
         patient.next = self.head
         self.head = patient
@@ -44,6 +44,28 @@ def insertWithPriority(self, patient):
         patient.next = current.next
         current.next = patient
 
+# Exigêmncia de código 4 de 7
+# Implementar função para inserir pacientes/cartão/nodo
+# Solicita a cor, atruibui número automaticamente, cria nodo(Paciente) e chama a inserção apropriada
+
+def  insert_patient(self):
+    color = input("Digite a cor do cartão (A para amarelo, V para verde): ").strip().upper()
+    if color not in [ 'A', 'V']:
+        print("Cor inválida. Use 'A' para amarelo ou 'V' para verde.")
+        return
+    if color == 'A':
+        patient = Patient(self.number_card_yellow, color)
+        self.number_card_yellow += 1
+        self.insert_with_priority(patient)
+    else:
+        patient = Patient(self.number_card_green, color)
+        self.number_card_green += 1
+        self.insert_without_priority(patient)
+    print(f"Paciente {patient.number} com cartão {color} inserido na lista.")
+
+
+
+  
     
 
    
