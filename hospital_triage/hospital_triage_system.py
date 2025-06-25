@@ -65,7 +65,16 @@ def  insert_patient(self):
 
 
 
-  
+# Exigência de código 5 de 7
+# Implementar função para imprimir a lista de pacientes
+# Imprimir os cartões e seus respectivos números da cabeça(head) até o final
+
+def print_waiting_list(self):
+    current = self.head
+    while current:
+        print (f"Cartão {current.color} - Número {current.number}")
+        current = current.next
+     
     
 
    
