@@ -145,15 +145,6 @@ def attend_patient(self):
 
 ### Exigência de código 7 de 7
 - Implementar a função principal para executar o sistema de triagem com um menu interativo.
-- O menu permite ao usuário:
-     - Adicionar pacientes (chamando insert_patient)
-
-     - Imprimir a lista de espera (print_waiting_list)
-
-     - Atender o próximo paciente (attend_patient)
-
-     - Sair do sistema
-
 
 
 - A função mantém o programa rodando até o usuário escolher sair.
@@ -188,6 +179,20 @@ if __name__ == "__main__":
 
 
 ```
+
+
+- O menu permite ao usuário:
+     - Adicionar pacientes (chamando insert_patient)
+         ![Tela de inserção de paciente](img/img_insert_patient.png)
+     - Imprimir a lista de espera (print_waiting_list)
+         ![Tela da lista de pacientes](img/img_list_patient.png)
+     - Atender o próximo paciente (attend_patient)
+         ![Tela de atendimento de paciente](img/img_attend_patient.png)
+     - Sair do sistema
+
+
+
+
 
 
 
