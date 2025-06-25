@@ -74,3 +74,36 @@ def insertWithPriority(self, patient):
         patient.next = current.next
         current.next = patient
 ```
+
+### Exigência de código 4 de 7
+- Implementar função para inserir pacientes/cartão/nodo.
+- Solicita a cor do cartão, atribui o número automaticamente conforme a cor e chama a função de inserção apropriada (com ou sem prioridade).
+
+```python
+def insert_patient(self):
+    color = input("Digite a cor do cartão (A para amarelo, V para verde): ").strip().upper()
+    if color not in ['A', 'V']:
+        print("Cor inválida. Use 'A' para amarelo ou 'V' para verde.")
+        return
+    if color == 'A':
+        patient = Patient(self.number_card_yellow, color)
+        self.number_card_yellow += 1
+        self.insert_with_priority(patient)
+    else:
+        patient = Patient(self.number_card_green, color)
+        self.number_card_green += 1
+        self.insert_without_priority(patient)
+    print(f"Paciente {patient.number} com cartão {color} inserido na lista.")
+
+
+```
+
+### Observação
+- O número do cartão é atribuído automaticamente conforme a cor:
+
+- Cartões amarelos ("A") começam do 201 em diante.
+
+- Cartões verdes ("V") começam do 1 em diante.
+
+- A função chama insert_with_priority para cartões amarelos (pacientes com prioridade) e insert_without_priority para cartões verdes (pacientes sem prioridade).
+
