@@ -1,19 +1,13 @@
-# Sistemas de Triagem Hospitalar e Emplacamento de Veículos em Python
+# Sistemas de Triagem Hospitalar em Python
 
 
 ## Visão Geral
 
-Este repositório contém dois projetos em Python desenvolvidos para uma tarefa da faculdade com foco em estruturas de dados:
+Este repositório contém um projeto em Python desenvolvido para uma tarefa da faculdade com foco em estruturas de dados:
 
 1. **Sistema de Triagem Hospitalar**  
    Implementação de uma fila de prioridade usando lista encadeada simples para gerenciar a triagem de pacientes com base na cor e número do cartão.
-
-2. **Tabela Hash para Emplacamento de Veículos**  
-   Implementação de uma tabela hash com tratamento de colisões por encadeamento separado usando listas encadeadas simples para mapear estados de registro de veículos com base no último número da placa.
-
 ---
-
-# Sistema de Triagem Hospitalar
 
 ### Exigência de código 1 de 7
 - Implementar lista encadeada simples.
