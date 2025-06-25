@@ -181,13 +181,39 @@ if __name__ == "__main__":
 ```
 
 
-- O menu permite ao usuário:
+-  **O menu permite ao usuário:**
+
+
+
      - Adicionar pacientes (chamando insert_patient)
+
+
+
          ![Tela de inserção de paciente](img/img_insert_patient.png)
+
+
+
+
      - Imprimir a lista de espera (print_waiting_list)
+
+
+
+
          ![Tela da lista de pacientes](img/img_list_patient.png)
+
+
+
+
      - Atender o próximo paciente (attend_patient)
+
+
+
+
+
          ![Tela de atendimento de paciente](img/img_attend_patient.png)
+
+
+
      - Sair do sistema
 
 
