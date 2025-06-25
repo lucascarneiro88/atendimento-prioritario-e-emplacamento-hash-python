@@ -107,3 +107,27 @@ def insert_patient(self):
 
 - A função chama insert_with_priority para cartões amarelos (pacientes com prioridade) e insert_without_priority para cartões verdes (pacientes sem prioridade).
 
+
+### Exigência de código 5 de 7
+- Implementar função para imprimir a lista de espera de pacientes.
+- A função deve percorrer a lista encadeada e imprimir o número do cartão e a cor de cada paciente.
+
+```python
+def imprimir_lista_espera(self):
+    current = self.head
+    if not current:
+        print("A lista de espera está vazia.")
+        return
+    while current:
+        print(f"Paciente Número: {current.number}, Cor do Cartão: {current.color}")
+        current = current.next
+
+```
+### Observação
+- A função percorre a lista encadeada a partir do nodo cabeça (head).
+
+- Para cada paciente, imprime o número do cartão e a cor.
+
+- Caso a lista esteja vazia, imprime uma mensagem informando isso.
+
+
