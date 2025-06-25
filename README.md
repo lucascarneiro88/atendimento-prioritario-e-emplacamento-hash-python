@@ -217,6 +217,9 @@ if __name__ == "__main__":
      - Sair do sistema
 
 
+        ![Tela de saida do sistema](img/img_exit_system.png)
+
+
 
 
 
